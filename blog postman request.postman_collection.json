@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "blog postman request",
+		"_postman_id": "f7bd8ced-1861-ed6b-3e54-ec9b49ab6a61",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/users",
+			"request": {
+				"url": "localhost:3000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"url": "localhost:3000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"url": "localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Rakibul Test\",\n\t\"username\": \"rakibul1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Find One User",
+			"request": {
+				"url": "localhost:3000/users/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/2",
+			"request": {
+				"url": "localhost:3000/users/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update a user",
+			"request": {
+				"url": "localhost:3000/users/4",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Thomas Vonda\",\n\t\"username\": \"thomas2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
